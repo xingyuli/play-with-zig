@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Zig",
+            "program": "${workspaceFolder}/zig-out/bin/play_with_zig",
+            "preLaunchTask": "zig build"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "zig build",
+            "type": "shell",
+            "command": "zig",
+            "args": ["build", "--verbose"],
+            "options": {
+                "shell": {
+                    "executable": "/bin/zsh",
+                    "args": ["-i", "-c"]
+                }
+            }
+        },
+        {
+            "label": "check zig version",
+            "type": "shell",
+            "command": "which zig && zig version",
+            "options": {
+                "shell": {
+                    "executable": "/bin/zsh",
+                    "args": ["-i", "-c"]
+                }
+            }
+        }
+    ]
+}
