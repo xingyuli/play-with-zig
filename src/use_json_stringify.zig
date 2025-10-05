@@ -13,12 +13,14 @@ const CustTypeWithJsonValue = struct {
     c: std.json.Value,
 };
 
+// Won't compile when std.json.stringify
 const CustTypeWithJsonParsed = struct {
     a: i32,
     b: f64,
     c: std.json.Parsed(std.json.Value),
 };
 
+// Won't compile when std.json.stringify
 const CustTypeWithJsonObjectMap = struct {
     a: i32,
     b: f64,
